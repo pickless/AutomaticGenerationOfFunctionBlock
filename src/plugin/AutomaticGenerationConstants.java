@@ -17,4 +17,6 @@ public class AutomaticGenerationConstants {
     public final static String ACTION_ICON_FILE_NAME = "icons/action icon.gif";
 
     public final static String MESSAGE_ICON_FILE_NAME = "icons/message icon.gif";
+
+    public final static String SYSTEM_STATE_VIEW_TYPE = "SysML State Machine Diagram";
 }

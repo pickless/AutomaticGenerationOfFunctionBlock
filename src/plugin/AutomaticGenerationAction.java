@@ -14,8 +14,6 @@ import java.awt.event.ActionEvent;
  * Created by XJ on 13-12-30.
  */
 public class AutomaticGenerationAction extends MDAction {
-    private String systemModelName;
-    private String detailModelName;
     private Icon icon;
 
     private Analyzer analyzer;
@@ -38,25 +36,24 @@ public class AutomaticGenerationAction extends MDAction {
      */
     @Override
     public void actionPerformed(ActionEvent event) {
-        systemModelName = getSystemModelNameFromDialog();
-        if (hasDiagram(systemModelName)) {
-            detailModelName = systemModelName + "的初始详细设计模型";
-            analyzer = new Analyzer(this);
-            dataManager = new DataManager(this);
-            constructor = new Constructor(this);
+        String systemModelName = getSystemModelNameFromDialog();
+        if (systemModelName == null || systemModelName.equals("")) {
+            return;
+        }
+
+        String detailModelName = systemModelName + "的初始详细设计模型";
+        dataManager = new DataManager(this, systemModelName, detailModelName);
+        if (analyze()) {
+            if (generate()) {
+                JOptionPane.showMessageDialog(null, "生成了" + detailModelName);
+            }
+            else {
+                JOptionPane.showMessageDialog(null, "生成失败");
+            }
         }
         else {
-            JOptionPane.showMessageDialog(null, "当前项目中不存在该系统设计模型！");
+            JOptionPane.showMessageDialog(null, "生成失败");
         }
-        JOptionPane.showMessageDialog(null, "生成了" + detailModelName);
-    }
-
-    public String getSystemModelName() {
-        return systemModelName;
-    }
-
-    public void setSystemModelName(String systemModelName) {
-        this.systemModelName = systemModelName;
     }
 
     public Icon getIcon() {
@@ -65,14 +62,6 @@ public class AutomaticGenerationAction extends MDAction {
 
     public void setIcon(Icon icon) {
         this.icon = icon;
-    }
-
-    public String getDetailModelName() {
-        return detailModelName;
-    }
-
-    public void setDetailModelName(String detailModelName) {
-        this.detailModelName = detailModelName;
     }
 
     public DataManager getDataManager() {
@@ -91,28 +80,24 @@ public class AutomaticGenerationAction extends MDAction {
         this.constructor = constructor;
     }
 
-    public Analyzer getAnalyzer() {
-        return analyzer;
-    }
-
-    public void setAnalyzer(Analyzer analyzer) {
-        this.analyzer = analyzer;
-    }
-
     private String getSystemModelNameFromDialog() {
         String name = null;
-        while (name == null || name.equals("")) {
-            try {
-                name = (String) JOptionPane.showInputDialog(null, "请输入系统设计模型图的名字：\n", "系统设计模型", JOptionPane.PLAIN_MESSAGE, icon, null, "");
-            }
-            catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "请输入合法的字符串名字");
-            }
+        try {
+            name = (String) JOptionPane.showInputDialog(null, "请输入系统设计模型图的名字：\n", "系统设计模型", JOptionPane.PLAIN_MESSAGE, icon, null, "");
+        }
+        catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "请输入合法的字符串名字");
         }
         return name;
     }
 
-    private boolean hasDiagram(String diagramName) {
-        return true;
+    private boolean analyze() {
+        analyzer = new Analyzer(this);
+        return analyzer.analyze(dataManager.getSystemDiagramName());
+    }
+
+    private boolean generate() {
+        constructor = new Constructor(this);
+        return constructor.generate(dataManager);
     }
 }
