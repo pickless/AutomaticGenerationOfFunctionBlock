@@ -37,7 +37,7 @@ public class AutomaticGenerationPlugin extends Plugin {
 
     private MDAction createAction() {
         AutomaticGenerationAction action = new AutomaticGenerationAction(ACTION_ID, ACTION_NAME);
-        action.setLargeIcon(new ImageIcon(getClass().getResource(ICON_FILE_NAME)));
+        action.setLargeIcon(new ImageIcon(getClass().getResource(ACTION_ICON_FILE_NAME)));
         action.setDescription(ACTION_NAME);
         return action;
     }

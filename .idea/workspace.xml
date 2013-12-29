@@ -7,10 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fe98df-9c9e-4161-aad2-c34d8ce36a71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/plugin/icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/plugin/AutomaticGenerationAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AutomaticGenerationOfFunctionBlock.iml" afterPath="$PROJECT_DIR$/AutomaticGenerationOfFunctionBlock.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/analysis/Analyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/generation/Constructor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/DataManager.java" />
+      <change type="DELETED" beforePath="D:\Projects\AutomaticGenerationOfFunctionBlock\src\plugin\icon.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/plugin/AutomaticGenerationAction.java" afterPath="$PROJECT_DIR$/src/plugin/AutomaticGenerationAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java" afterPath="$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/plugin/AutomaticGenerationPlugin.java" afterPath="$PROJECT_DIR$/src/plugin/AutomaticGenerationPlugin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -79,20 +81,18 @@
       <file leaf-file-name="AutomaticGenerationPlugin.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="21" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1406">
+            <state line="31" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1368">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-                <element signature="e#2046#2047#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutomaticGenerationAction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationAction.java">
+      <file leaf-file-name="AutomaticGenerationConstants.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="742" selection-end="742" vertical-scroll-proportion="0.5976139" vertical-offset="0" max-vertical-offset="922">
+            <state line="11" column="43" selection-start="240" selection-end="240" vertical-scroll-proportion="0.34318554" vertical-offset="0" max-vertical-offset="609">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,9 +113,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java" />
         <option value="$PROJECT_DIR$/src/plugin/AutomaticGenerationPlugin.java" />
         <option value="$PROJECT_DIR$/src/plugin/AutomaticGenerationAction.java" />
+        <option value="$PROJECT_DIR$/src/analysis/Analyzer.java" />
+        <option value="$PROJECT_DIR$/src/data/DataManager.java" />
+        <option value="$PROJECT_DIR$/src/generation/Constructor.java" />
+        <option value="$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java" />
       </list>
     </option>
   </component>
@@ -191,6 +194,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutomaticGenerationOfFunctionBlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutomaticGenerationOfFunctionBlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutomaticGenerationOfFunctionBlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutomaticGenerationOfFunctionBlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutomaticGenerationOfFunctionBlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutomaticGenerationOfFunctionBlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -209,6 +266,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\AutomaticGenerationOfFunctionBlock\src\plugin\icon" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -429,6 +491,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -451,12 +518,12 @@
       <changelist id="c3fe98df-9c9e-4161-aad2-c34d8ce36a71" name="Default" comment="" />
       <created>1388335113925</created>
       <updated>1388335113925</updated>
-      <workItem from="1388335115326" duration="4406000" />
+      <workItem from="1388335115326" duration="6336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4406000" />
+    <option name="totallyTimeSpent" value="6336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -467,6 +534,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -475,7 +543,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32982087" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -485,7 +553,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -546,9 +613,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/javax/swing/JOptionPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="0.22668113" vertical-offset="0" max-vertical-offset="922">
+        <state line="547" column="25" selection-start="22996" selection-end="22996" vertical-scroll-proportion="0.3329718" vertical-offset="9421" max-vertical-offset="47823">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/DataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="249" selection-end="249" vertical-scroll-proportion="0.22668113" vertical-offset="0" max-vertical-offset="922">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/analysis/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="255" selection-end="255" vertical-scroll-proportion="0.22668113" vertical-offset="0" max-vertical-offset="922">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generation/Constructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="263" selection-end="263" vertical-scroll-proportion="0.22668113" vertical-offset="0" max-vertical-offset="922">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="564" selection-end="564" vertical-scroll-proportion="0.17570499" vertical-offset="275" max-vertical-offset="1900">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -557,18 +652,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="21" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1406">
+        <state line="31" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1368">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationAction.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/AutomaticGenerationConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="742" selection-end="742" vertical-scroll-proportion="0.5976139" vertical-offset="0" max-vertical-offset="922">
+        <state line="11" column="43" selection-start="240" selection-end="240" vertical-scroll-proportion="0.34318554" vertical-offset="0" max-vertical-offset="609">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
