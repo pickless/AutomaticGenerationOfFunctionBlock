@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="agfb">
+    <output-path>$PROJECT_DIR$/out/artifacts/agfb</output-path>
+    <root id="archive" name="agfb.jar">
+      <element id="module-output" name="AutomaticGenerationOfFunctionBlock" />
+    </root>
+  </artifact>
+</component>
