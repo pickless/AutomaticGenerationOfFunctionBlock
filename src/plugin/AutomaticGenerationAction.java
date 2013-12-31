@@ -83,7 +83,7 @@ public class AutomaticGenerationAction extends MDAction {
     private String getSystemModelNameFromDialog() {
         String name = null;
         try {
-            name = (String) JOptionPane.showInputDialog(null, "请输入系统设计模型图的名字：\n", "系统设计模型", JOptionPane.PLAIN_MESSAGE, icon, null, "");
+            name = (String) JOptionPane.showInputDialog(null, "请输入系统设计模型图的名字：\n", "系统设计模型", JOptionPane.PLAIN_MESSAGE, null, null, "");
         }
         catch (Exception e) {
             JOptionPane.showMessageDialog(null, "请输入合法的字符串名字");
